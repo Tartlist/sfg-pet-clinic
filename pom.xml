@@ -20,6 +20,9 @@
     <description>sfg-pet-clinic</description>
     <properties>
         <java.version>11</java.version>
+        <jaxb.version>2.3.0</jaxb.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
     <dependencies>
 
@@ -39,6 +42,7 @@
                     </excludes>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 
