@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"
-      xmlns:th="http://www.thymeleaf.org">
+      xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{fragments/layout :: layout (~{::body},'owners')}">
 <head>
     <meta charset="UTF-8">
     <title>List of owners</title>
@@ -8,12 +9,12 @@
 <body>
         <h1 th:text="'List of Owners'"></h1>
 
-<table>
-    <thead>
+<table class="table table-striped">
+    <thead class="bg-dark">
     <tr>
-        <td>Id</td>
-        <td>Name</td>
-        <td>Last name</td>
+        <td style="width: 150px; color: white">Id</td>
+        <td style="width: 150px; color: white">Name</td>
+        <td style="width: 150px; color: white">Last name</td>
     </tr>
     </thead>
 
