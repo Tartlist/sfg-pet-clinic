@@ -7,26 +7,26 @@
     <title>List of owners</title>
 </head>
 <body>
-        <h1 th:text="'List of Owners'"></h1>
+    <h2 th:text="'List of Owners'"></h2>
 
-<table class="table table-striped">
-    <thead class="bg-dark">
-    <tr>
-        <td style="width: 150px; color: white">Id</td>
-        <td style="width: 150px; color: white">Name</td>
-        <td style="width: 150px; color: white">Last name</td>
-    </tr>
-    </thead>
+    <table class="table table-striped">
+        <thead class="bg-dark">
+        <tr>
+            <td style="width: 150px; color: white">Id</td>
+            <td style="width: 150px; color: white">Name</td>
+            <td style="width: 150px; color: white">Last name</td>
+        </tr>
+        </thead>
 
-    <tbody>
-    <tr th:each="owner : ${ownersList}">
-        <td th:text="${owner.id}"></td>
-        <td th:text="${owner.firstName}"></td>
-        <td th:text="${owner.lastName}"></td>
-    </tr>
-    </tbody>
+        <tbody>
+        <tr th:each="owner : ${ownersList}">
+            <td th:text="${owner.id}"></td>
+            <td th:text="${owner.firstName}"></td>
+            <td th:text="${owner.lastName}"></td>
+        </tr>
+        </tbody>
 
-</table>
+    </table>
 
 </body>
 </html>
